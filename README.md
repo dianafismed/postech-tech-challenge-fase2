@@ -1,9 +1,5 @@
 # Tech Challenge — Fase 2 | POSTECH Data Analytics
 
-> **INSTRUÇÕES:** este README é um template. Substitua **todos** os blocos marcados com
-> `<!-- PREENCHER -->` e apague as linhas de instrução antes de submeter.
-> O README vale **3 pontos** na Dimensão 1 da rúbrica.
-
 ---
 
 ## 1. Identificação
@@ -19,7 +15,7 @@
 | Nome completo | RM | E-mail |
 |---|---|---|
 | <!-- PREENCHER --> | RM000000 | |
-| | | |
+|Diana Avila |RM377835 |dianafismed@yahoo.com.br |
 | | | |
 | | | |
 | | | |
