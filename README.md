@@ -6,19 +6,19 @@
 
 | Campo | Valor |
 |---|---|
-| Turma | <!-- PREENCHER: ex. 12DTAT --> |
-| Grupo | <!-- PREENCHER: ex. Grupo 07 --> |
+| Turma | 2DTATBB |
+| Grupo | Grupo 15 |
 | Data de entrega | <!-- PREENCHER: DD/MM/AAAA --> |
 
 ### Integrantes
 
 | Nome completo | RM | E-mail |
 |---|---|---|
-| <!-- PREENCHER --> | RM000000 | |
-|Diana Avila |RM377835 |dianafismed@yahoo.com.br|
-| | | |
-| | | |
-| | | |
+|Carolina Barboza Segala |RM377840 |carolbarboza85@gmail.com |
+|Danilo Augusto Vieira de Andrade |RM377762 |danilo.andrade.393@bb.com.br |
+|Diana Avila |RM377835 |dianafismed@yahoo.com.br |
+|Lilian Dantas Campos |RM377797 |lilian_ccontabeis@yahoo.com.br |
+
 
 ---
 
@@ -39,18 +39,29 @@ Estes três links são **obrigatórios** e devem ser idênticos aos do PDF de su
 
 ## 3. O problema
 
-<!-- PREENCHER: contexto de negócio e a motivação para o uso de Machine Learning. -->
+A concessão de crédito é essencial para a operação das instituições financeiras, porém traz consigo o risco constante da inadimplência.
+
+Diante disso, a aplicação do Machine Learning surge como uma solução estratégica para otimizar e automatizar a análise de crédito, permitindo identificar padrões em dados históricos para classificar os solicitantes entre bons e maus pagadores.
+
+Com isso, o objetivo do projeto é desenvolver um modelo preditivo capaz de diminuir o risco da carteira, aumentar a eficiência operacional e acelerar as tomadas de decisão nos processos de avaliação de cartões de crédito.
+
 
 ### Variável alvo
 
-<!-- PREENCHER: qual é a variável alvo, como foi definida e — se houve binarização —
-     qual limiar foi adotado e por quê. Justifique com base na distribuição das classes. -->
+A vaiável alvo é a STATUS.
+
+Foi adotado um critério padrão de risco que identifica como mau pagador um cliente com 60 dias ou mais de atraso, para tratamento inicial e binarização.
+
+0 - Bom Pagador: clientes que apresentam os indicadores 0, 1, C ou X.
+
+1 - Mau Pagador: clientes que apresentam os indicadores 2, 3, 4 ou 5 em seu STATUS, demonstrando inadimplência grave, com atrasos maiores de 60 dias.
+
 
 ### Dataset
 
 | Campo | Valor |
 |---|---|
-| Fonte | <!-- PREENCHER: URL --> |
+| Fonte | https://drive.google.com/file/d/1z4yEyiCE_CGCWbvAAZQZSz-5-E5T5eYd/view |
 | Linhas × colunas | <!-- PREENCHER --> |
 | Período / versão | <!-- PREENCHER --> |
 | Licença de uso | <!-- PREENCHER --> |
