@@ -62,15 +62,6 @@ Foi adotado um critério padrão de risco que identifica como mau pagador um cli
 | Campo | Valor |
 |---|---|
 | Fonte | https://drive.google.com/file/d/1z4yEyiCE_CGCWbvAAZQZSz-5-E5T5eYd/view |
-| Linhas × colunas | <!-- PREENCHER --> |
-| Período / versão | <!-- PREENCHER --> |
-| Licença de uso | <!-- PREENCHER --> |
-
-Descrição das variáveis:
-
-| Variável | Tipo | Descrição |
-|---|---|---|
-| | | |
 
 ---
 
@@ -96,8 +87,7 @@ Depois execute os notebooks nesta ordem:
 |---|---|---|
 | 1 | `notebooks/01_eda.ipynb` | Análise exploratória |
 | 2 | `notebooks/02_preprocessamento.ipynb` | Limpeza, escala e feature engineering |
-| 3 | `notebooks/03_modelagem.ipynb` | Treino e comparação dos modelos |
-| 4 | `notebooks/04_avaliacao.ipynb` | Métricas, importância de variáveis e conclusões |
+| 3 | `notebooks/03_modelagem.ipynb` | Treino, comparação dos modelos, métricas e conclusões |
 
 **Semente fixa:** `RANDOM_STATE = 42`, declarada na primeira célula de cada notebook.
 Rodar os notebooks na ordem acima, a partir de um ambiente limpo, deve reproduzir
