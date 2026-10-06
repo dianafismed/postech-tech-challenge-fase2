@@ -30,10 +30,7 @@ Estes três links são **obrigatórios** e devem ser idênticos aos do PDF de su
 |---|---|
 | Repositório | https://github.com/dianafismed/postech-tech-challenge-fase2 |
 | Vídeo executivo (≤ 5 min) | <!-- PREENCHER: YouTube não listado / Drive com acesso liberado --> |
-| Apresentação | <!-- PREENCHER: link do arquivo em `docs/` ou Drive --> |
-
-> ⚠️ Repositório privado ou inacessível **zera** toda a Dimensão 1 da rúbrica.
-> Confira o acesso em uma janela anônima antes de enviar.
+| Apresentação | https://drive.google.com/file/d/15ZaXckwTZQANMAzVcml9WInw-xZAozuE/view?usp=drive_link |
 
 ---
 
@@ -97,15 +94,27 @@ exatamente os números da seção 5.
 
 ## 5. Resultados
 
-| Modelo | Acurácia | Precisão | Recall | F1 | AUC-ROC |
-|---|---|---|---|---|---|
-| <!-- PREENCHER --> | | | | | |
-| | | | | | |
+| Modelo | Acurácia | Precisão | Recall | F1 |
+|---|---|---|---|---|
+| Regressão Logística | 0.10     | 0.62     | 0.47   | 0.06      |
+| SVM                 | 0.09     | 0.70     | 0.32   | 0.05      |
+| XGBoost             | 0.12     | 0.90     | 0.15   | 0.10      |
+| KNN                 | 0.06     | 0.84     | 0.11   | 0.04      |
+| Floresta Aleatória  | 0.06     | 0.93     | 0.06   | 0.08      |
+| Árvore de Decisão   | 0.06     | 0.90     | 0.08   | 0.05      |
 
-**Modelo escolhido:** <!-- PREENCHER --> — <!-- PREENCHER: por quê. -->
+<br>
 
-**Métricas priorizadas:** <!-- PREENCHER: justifique a escolha considerando o
-     desbalanceamento de classes e o custo de cada tipo de erro no contexto do negócio. -->
+
+**Modelo escolhido:**
+
+Regressão Logística, pois apresentou maior *RECALL*.
+<br>
+<br>
+
+**Métricas priorizadas:** 
+
+Como o objetivo da anállise é evitar perdas, a métrica priorizada foi o ***Recall***, pois ele mede a capacidade do modelo de encontrar todos os exemplos reais da classe positiva, ou seja, os maus pagadores. Neste momento, o custo de tomar um calote ($FN$) é superior ao custo de recusar um bom cliente ($FP$).
 
 ---
 
@@ -115,13 +124,40 @@ exatamente os números da seção 5.
      Inclua quais variáveis mais influenciam o resultado e o que isso significa
      na prática para quem vai usar o modelo. -->
 
-1.
-2.
-3.
+**1. A Solução Simplificada Mantém Alta Assertividade com Menor Custo Operacional**
+
+          A escolha do modelo de regressão entregou um equilíbrio ideal entre capacidade preditiva (identificação eficaz de maus pagadores) e simplicidade matemática.
+     
+          Na prática, a instituição financeira ganha em velocidade de resposta no momento do cadastro do cliente e reduz custos de infraestrutura em nuvem, mantendo a assertividade necessária para preservar a saúde da carteira de crédito. 
+<br>
+<br>
+
+**2. Total Transparência e Facilidade de Explicabilidade para os Analistas e Reguladores**
+
+          Por se tratar de uma estrutura linear/logística, cada decisão do modelo pode ser decomposta no impacto exato de cada variável do cliente.
+     
+          Isto facilita o trabalho da equipe de atendimento e mesa de crédito ao justificar recusas de forma clara e transparente para os clientes, garantindo 100% de conformidade com as exigências de auditoria e regulação do setor bancário (como LGPD e diretrizes do Banco Central).
+
+<br>
+<br>
+
+**3. Flexibilidade para Ajustar a Política de Aprovação conforme a Meta Comercial**
+
+          A saída do modelo em formato de probabilidade contínua ($0\%$ a $100\%$) permite calibrar os pontos de corte (thresholds) de aprovação.
+          
+          Isto permite que a gestão de risco altere a política de crédito conforme o momento do mercado — adotando uma postura mais conservadora (restringindo aprovações em momentos de crise) ou mais expansionista (flexibilizando aprovações para crescimento da carteira) sem a necessidade de re-treinar o modelo.
+
+<br>
+<br>
 
 ### Limitações e próximos passos
 
-<!-- PREENCHER -->
+**Problemas encontrados**
+
+- Há forte desbalanceamento de classes, o que prejudica uma análise com maior poder de predição.
+
+**Possíveis melhoras**
+
 
 ---
 
