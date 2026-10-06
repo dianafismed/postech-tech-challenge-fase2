@@ -19,7 +19,6 @@
 |Diana Avila |RM377835 |dianafismed@yahoo.com.br |
 |Lilian Dantas Campos |RM377797 |lilian_ccontabeis@yahoo.com.br |
 
-
 ---
 
 ## 2. Links da entrega
@@ -158,6 +157,15 @@ Como o objetivo da anállise é evitar perdas, a métrica priorizada foi o ***Re
 
 **Possíveis melhoras**
 
+- Ajustar o Limiar de Decisão (Threshold Tuning) em vez de usar $0.50$
+
+Para bases com ~4,5% de positivos, o limiar ideal de decisão da Regressão Logística costuma ficar entre $0.05$ e $0.20$.
+
+- Encontrar uma base melhor
+
+- Verificar se há outras métricas que podem complementar as já experimentadas.
+
+
 
 ---
 
@@ -177,4 +185,4 @@ Antes de enviar, percorra o [`CHECKLIST.md`](CHECKLIST.md).
 
 ## 8. Tecnologias
 
-<!-- PREENCHER: Python 3.11, pandas, scikit-learn, ... -->
+requirements.txt
