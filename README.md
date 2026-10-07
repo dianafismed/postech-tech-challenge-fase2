@@ -28,7 +28,7 @@ Estes três links são **obrigatórios** e devem ser idênticos aos do PDF de su
 | Item | Link |
 |---|---|
 | Repositório | https://github.com/dianafismed/postech-tech-challenge-fase2 |
-| Vídeo executivo (≤ 5 min) | <!-- PREENCHER: YouTube não listado / Drive com acesso liberado --> |
+| Vídeo executivo (≤ 5 min) | https://youtu.be/_SMwM_3C4Nc |
 | Apresentação | https://drive.google.com/file/d/15ZaXckwTZQANMAzVcml9WInw-xZAozuE/view?usp=drive_link |
 
 ---
